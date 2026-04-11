@@ -1,2 +1,33 @@
-while True:
-    print("Hon Minh Loang")
+# Calo Calculation
+def tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu):
+    if gioi_tinh == "Nam":
+        TDEE = (10 * can_nang) + (6.25 * chieu_cao) - (5 * tuoi) + 5
+    else:
+        TDEE = (10 * can_nang) + (6.25 * chieu_cao) - (5 * tuoi) + 161
+    if van_dong == "Rất hay vận động":
+        TDEE = TDEE * 1.725
+    elif van_dong == "Hay vận động":
+        TDEE = TDEE * 1.55
+    elif van_dong == "Ít vận động":
+        TDEE = TDEE * 1.375
+    else:
+        TDEE = TDEE * 1.2
+    if muc_tieu == "Tăng cân":
+        TDEE += 375
+    elif muc_tieu == "Giảm cân":
+        TDEE -= 500
+    return round(TDEE)
+def tinh_Tong_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong):
+    if gioi_tinh == "Nam":
+        Tong_TDEE = (10 * can_nang) + (6.25 * chieu_cao) - (5 * tuoi) + 5
+    else:
+        Tong_TDEE = (10 * can_nang) + (6.25 * chieu_cao) - (5 * tuoi) + 161
+    if van_dong == "Rất hay vận động":
+        Tong_TDEE = Tong_TDEE * 1.725
+    elif van_dong == "Hay vận động":
+        Tong_TDEE = Tong_TDEE * 1.55
+    elif van_dong == "Ít vận động":
+        Tong_TDEE = Tong_TDEE * 1.375
+    else:
+        Tong_TDEE = Tong_TDEE * 1.2
+    return round(Tong_TDEE)
