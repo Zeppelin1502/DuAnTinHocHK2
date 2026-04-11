@@ -21,20 +21,6 @@ def tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu):
     elif muc_tieu == "Giảm cân":
         TDEE -= 500
     return round(TDEE)
-def tinh_Tong_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong):
-    if gioi_tinh == "Nam":
-        Tong_TDEE = (10 * can_nang) + (6.25 * chieu_cao) - (5 * tuoi) + 5
-    else:
-        Tong_TDEE = (10 * can_nang) + (6.25 * chieu_cao) - (5 * tuoi) + 161
-    if van_dong == "Rất hay vận động":
-        Tong_TDEE = Tong_TDEE * 1.725
-    elif van_dong == "Hay vận động":
-        Tong_TDEE = Tong_TDEE * 1.55
-    elif van_dong == "Ít vận động":
-        Tong_TDEE = Tong_TDEE * 1.375
-    else:
-        Tong_TDEE = Tong_TDEE * 1.2
-    return round(Tong_TDEE)
 def tinh_protein(can_nang, muc_tieu, van_dong):
     if van_dong == "Rất hay vận động":
         if muc_tieu == "Tăng cân" or "Giảm cân":
@@ -64,6 +50,26 @@ def tinh_carb(calo_muc_tieu, protein_can_thiet, fat_can_thiet):
     carb_can_thiet = (calo_muc_tieu - protein_can_thiet * 4 - fat_can_thiet * 9)/4
     return round(carb_can_thiet)
 # KNN
-def tao_thuc_don(calo_muc_tieu,protein_can_thiet, loai_tru):
+def learn(file_csv):
     df = pds.read_csv("duantinhoc.csv")
-
+    features = ["Protein (g)", "Carbs (g)", "Fat (g)", "Calo (kcal)"]
+    Imp_features = df[features]
+    scaler = StandardScaler()
+    Imp_features_scaled = scaler.fit_transform(Imp_features)
+    knn = NearestNeighbors(metric = "euclidean")
+    knn.fit(Imp_features_scaled)
+    return knn, df, scaler
+def create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet, so_bua_an):
+    carb_meal = carb_can_thiet / so_bua_an
+    protein_meal = protein_can_thiet / so_bua_an
+    fat_meal = fat_can_thiet / so_bua_an
+    calo_meal = calo_muc_tieu / so_bua_an
+    meal = [[carb_meal, protein_meal, fat_meal, calo_meal]]
+    meal_scaled = scaler.transform(meal)
+    _, indicies = knn.kneighbors(meal_scaled, n_neighbors = so_bua_an)
+    menu = []
+    for mon in range(so_bua_an):
+        i_mon_an = indicies[0][mon]
+        mon_an = df.iloc[i_mon_an]
+        menu.append(mon_an)
+    return menu

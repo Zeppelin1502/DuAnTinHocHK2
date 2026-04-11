@@ -1,3 +1,4 @@
 import pandas as pds
-df = pds.read_csv("duantinhoc.csv")
-print(df)
+s = [1,2,3,4,5]
+series = pds.Series(s, index=["a", "b", "c", "d", "e"])
+# print(series.loc[])
