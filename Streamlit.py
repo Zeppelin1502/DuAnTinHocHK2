@@ -56,8 +56,8 @@ if st.button(" TẠO THỰC ĐƠN!", use_container_width=True, type="primary"):
         mon_an = menu_here[i]
         with st.container(border=True):
             st.markdown(f"#### Bữa {i + 1}")
-            st.write(f"Món ăn: {mon_an["Name"]} ")
-            st.caption(f"Chi tiết: {mon_an["Calo (kcal)"]} kcal | {mon_an["Protein (g)"]} g Đạm | {mon_an["Carbs (g)"]} g Carbs | {mon_an["Fat (g)"]} g Fat")
+            st.write(f"Món ăn: {mon_an['Name']} ")
+            st.caption(f"Chi tiết: {mon_an['Calo (kcal)']} kcal | {mon_an['Protein (g)']} g Đạm | {mon_an['Carbs (g)']} g Carbs | {mon_an['Fat (g)']} g Fat")
 
     mon_1 = menu_here[0]
     mon_2 = menu_here[1]
