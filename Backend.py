@@ -1,3 +1,10 @@
+import pandas as pd
+from sklearn.neighbors import NearestNeighbors
+from sklearn.preprocessing import StandardScaler
+
+from Streamlit import muc_tieu
+
+
 # Calculation
 def tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu):
     if gioi_tinh == "Nam":
@@ -53,3 +60,7 @@ def tinh_protein(can_nang, muc_tieu, van_dong):
         else:
             protein = can_nang * 1
     return round(protein)
+# KNN
+def tao_thuc_don(calo_muc_tieu,protein_can_thiet, loai_tru):
+    df = pd.read_csv("duantinhoc.csv")
+
