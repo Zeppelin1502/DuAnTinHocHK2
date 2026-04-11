@@ -19,7 +19,6 @@ with st.sidebar:
     tuoi = st.number_input("Tuổi:",min_value=0, value=14)
     gioi_tinh = st.selectbox("Giới tính:", ["Nam", "Nữ"])
     van_dong = st.selectbox("Mức độ vận động:", ["Rất hay vận động", "Hay vận động", "Ít vận động", "Không bao giờ vận động"])
-    so_bua_an = st.slider("Số bữa ăn trong ngày", 1, 5, 3)
     muc_tieu =st.selectbox("Mục tiêu:", ["Tăng cân", "Giảm cân", "Giữ dáng"])
     loai_tru = st.multiselect("Món muốn loại trừ:", ["Hành", "Hải sản", "Sữa"])
 
@@ -49,7 +48,7 @@ if st.button(" TẠO THỰC ĐƠN!", use_container_width=True, type="primary"):
         time.sleep(1)
         status.update(label="Xong rồi!", state="complete")
 
-    menu_here = create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet, so_bua_an)
+    menu_here = create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet)
 
     st.subheader("Thực đơn gợi ý (có thể sẽ lệch do dataset)")
     for i in range(3):
@@ -58,7 +57,8 @@ if st.button(" TẠO THỰC ĐƠN!", use_container_width=True, type="primary"):
             st.markdown(f"#### Bữa {i + 1}")
             st.write(f"Món ăn: {mon_an["Name"]} ")
             st.caption(f"Chi tiết: {mon_an["Calo (kcal)"]} kcal | {mon_an["Protein (g)"]} g Đạm | {mon_an["Carbs (g)"]} g Carbs | {mon_an["Fat (g)"]} g Fat")
-menu_here = create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet, so_bua_an)
+menu_here = create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet)
+
 mon_1 = menu_here[0]
 mon_2 = menu_here[1]
 mon_3 = menu_here[2]

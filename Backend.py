@@ -59,16 +59,16 @@ def learn(file_csv):
     knn = NearestNeighbors(metric = "euclidean")
     knn.fit(Imp_features_scaled)
     return knn, df, scaler
-def create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet, so_bua_an):
-    carb_meal = carb_can_thiet / so_bua_an
-    protein_meal = protein_can_thiet / so_bua_an
-    fat_meal = fat_can_thiet / so_bua_an
-    calo_meal = calo_muc_tieu / so_bua_an
+def create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet):
+    carb_meal = carb_can_thiet / 3
+    protein_meal = protein_can_thiet / 3
+    fat_meal = fat_can_thiet / 3
+    calo_meal = calo_muc_tieu / 3
     meal = [[carb_meal, protein_meal, fat_meal, calo_meal]]
     meal_scaled = scaler.transform(meal)
-    _, indicies = knn.kneighbors(meal_scaled, n_neighbors = so_bua_an)
+    _, indicies = knn.kneighbors(meal_scaled, n_neighbors = 3)
     menu = []
-    for mon in range(so_bua_an):
+    for mon in range(3):
         i_mon_an = indicies[0][mon]
         mon_an = df.iloc[i_mon_an]
         menu.append(mon_an)
