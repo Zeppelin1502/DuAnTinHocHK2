@@ -1,9 +1,6 @@
-import pandas as pd
+import pandas as pds
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import StandardScaler
-
-from Streamlit import muc_tieu
-
 
 # Calculation
 def tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu):
@@ -55,12 +52,18 @@ def tinh_protein(can_nang, muc_tieu, van_dong):
         else:
             protein = can_nang * 1.2
     else:
-        if muc_tieu == "Tăng cân" or "Giảm cân":
+        if muc_tieu in ["Tăng cân", "Giảm cân"]:
             protein = can_nang * 1.2
         else:
             protein = can_nang * 1
     return round(protein)
+def tinh_fat(calo_muc_tieu):
+    fat_can_thiet = (calo_muc_tieu * 0.3)/9
+    return round(fat_can_thiet)
+def tinh_carb(calo_muc_tieu, protein_can_thiet, fat_can_thiet):
+    carb_can_thiet = (calo_muc_tieu - protein_can_thiet * 4 - fat_can_thiet * 9)/4
+    return round(carb_can_thiet)
 # KNN
 def tao_thuc_don(calo_muc_tieu,protein_can_thiet, loai_tru):
-    df = pd.read_csv("duantinhoc.csv")
+    df = pds.read_csv("duantinhoc.csv")
 

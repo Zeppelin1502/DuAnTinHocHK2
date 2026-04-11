@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-from Backend import tinh_TDEE, tinh_Tong_TDEE, tinh_protein
+from Backend import tinh_TDEE, tinh_Tong_TDEE, tinh_protein, tinh_fat, tinh_carb
 
 st.set_page_config(
     page_title="Dự Án Tin Học Hk2",
@@ -21,18 +21,24 @@ with st.sidebar:
 calo_muc_tieu = tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu)
 calo_tieu_thu = tinh_Tong_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong)
 protein_can_thiet = tinh_protein(can_nang, muc_tieu, van_dong)
+fat_can_thiet = tinh_fat(calo_muc_tieu)
+carb_can_thiet = tinh_carb(calo_muc_tieu, protein_can_thiet, fat_can_thiet)
 #2. main
 st.title("🥗 AI Nutritionist - Trợ lý Dinh dưỡng Cá nhân của bạn!")
 st.subheader("Chỉ số của cơ thể")
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
     st.metric("Mục tiêu Calo/ngày", f" {calo_muc_tieu} kcal") # Thay "---" bằng biến logic
 with col2:
     st.metric("Đạm khuyên dùng", f" {protein_can_thiet} g")      # Thay "---" bằng biến logic
 with col3:
-    st.metric("Tổng năng lượng tiêu mỗi ngày", f"{calo_tieu_thu} kcal")   # Thay "---" bằng biến logic
+    st.metric("Tinh bột khuyên dùng", f" {carb_can_thiet} g")
+with col4:
+    st.metric("Chất béo khuyên dùng", f" {fat_can_thiet} g")
+with col5:
+    st.metric("Tổng nl tiêu thụ mỗi ngày", f"{calo_tieu_thu} kcal")
 st.divider()
-#3. button
+# 3. button
 if st.button(" TẠO THỰC ĐƠN!", use_container_width=True, type="primary"):
     with st.status("Đang tính toán...") as status:
         st.write("Đang lục lọi nhà bếp...")
