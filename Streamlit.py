@@ -1,6 +1,6 @@
 import streamlit as st
 import time
-from Backend import tinh_TDEE, tinh_Tong_TDEE
+from Backend import tinh_TDEE, tinh_Tong_TDEE, tinh_protein
 
 st.set_page_config(
     page_title="Dự Án Tin Học Hk2",
@@ -20,6 +20,7 @@ with st.sidebar:
 
 calo_muc_tieu = tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu)
 calo_tieu_thu = tinh_Tong_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong)
+protein_can_thiet = tinh_protein(can_nang, muc_tieu, van_dong)
 #2. main
 st.title("🥗 AI Nutritionist - Trợ lý Dinh dưỡng Cá nhân của bạn!")
 st.subheader("Chỉ số của cơ thể")
@@ -27,7 +28,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.metric("Mục tiêu Calo/ngày", f" {calo_muc_tieu} kcal") # Thay "---" bằng biến logic
 with col2:
-    st.metric("Đạm khuyên dùng", "--- g")      # Thay "---" bằng biến logic
+    st.metric("Đạm khuyên dùng", f" {protein_can_thiet} g")      # Thay "---" bằng biến logic
 with col3:
     st.metric("Tổng năng lượng tiêu mỗi ngày", f"{calo_tieu_thu} kcal")   # Thay "---" bằng biến logic
 st.divider()
