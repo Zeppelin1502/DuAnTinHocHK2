@@ -2,6 +2,7 @@ import streamlit as st
 import time
 from Backend import tinh_TDEE, tinh_protein, tinh_fat, tinh_carb, learn, create
 
+@st.cache_resource
 def load():
     return learn("duantinhoc.csv")
 
