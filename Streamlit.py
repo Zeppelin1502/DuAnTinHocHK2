@@ -28,7 +28,7 @@ protein_can_thiet = tinh_protein(can_nang, muc_tieu, van_dong)
 fat_can_thiet = tinh_fat(calo_muc_tieu)
 carb_can_thiet = tinh_carb(calo_muc_tieu, protein_can_thiet, fat_can_thiet)
 #2. main
-st.title("🥗 AI Nutritionist - Trợ lý Dinh dưỡng Cá nhân của bạn!")
+st.title("🥗 AI Nutritionist - Trợ lý Dinh dưỡng Cá nhân của bạn! - made by Bao Dang and Hoang Minh")
 st.subheader("Chỉ số của cơ thể")
 col1, col2, col3, col4 = st.columns(4)
 with col1:
