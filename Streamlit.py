@@ -57,19 +57,18 @@ if st.button(" TẠO THỰC ĐƠN!", use_container_width=True, type="primary"):
             st.markdown(f"#### Bữa {i + 1}")
             st.write(f"Món ăn: {mon_an["Name"]} ")
             st.caption(f"Chi tiết: {mon_an["Calo (kcal)"]} kcal | {mon_an["Protein (g)"]} g Đạm | {mon_an["Carbs (g)"]} g Carbs | {mon_an["Fat (g)"]} g Fat")
-menu_here = create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet)
 
-mon_1 = menu_here[0]
-mon_2 = menu_here[1]
-mon_3 = menu_here[2]
-#4. button
-st.divider()
-c1 = st.container()
-with c1:
-    noi_dung_file = f"Thực đơn của bạn: \nBữa 1: {mon_1}\nBữa 2: {mon_2}\nBữa 3: {mon_3}"
-    st.download_button(
-        label="Tải thực đơn về máy (.txt)",
-        data=noi_dung_file,
-        file_name="thuc_don.txt",
-        mime="text/plain",
-    )
+    mon_1 = menu_here[0]
+    mon_2 = menu_here[1]
+    mon_3 = menu_here[2]
+    #4. button
+    st.divider()
+    c1 = st.container()
+    with c1:
+        noi_dung_file = f"Thực đơn của bạn: \nBữa 1: {mon_1}\nBữa 2: {mon_2}\nBữa 3: {mon_3}"
+        st.download_button(
+            label="Tải thực đơn về máy (.txt)",
+            data=noi_dung_file,
+            file_name="thuc_don.txt",
+            mime="text/plain",
+        )

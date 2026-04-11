@@ -23,17 +23,17 @@ def tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu):
     return round(TDEE)
 def tinh_protein(can_nang, muc_tieu, van_dong):
     if van_dong == "Rất hay vận động":
-        if muc_tieu == "Tăng cân" or "Giảm cân":
+        if muc_tieu in ["Tăng cân", "Giảm cân"]:
             protein = can_nang * 2.2
         else:
             protein = can_nang * 2
     elif van_dong == "Hay vận động":
-        if muc_tieu == "Tăng cân" or "Giảm cân":
+        if muc_tieu in ["Tăng cân", "Giảm cân"]:
             protein = can_nang * 1.8
         else:
             protein = can_nang * 1.6
     elif van_dong == "Ít vận động":
-        if muc_tieu == "Tăng cân" or "Giảm cân":
+        if muc_tieu in ["Tăng cân", "Giảm cân"]:
             protein = can_nang * 1.4
         else:
             protein = can_nang * 1.2
@@ -64,7 +64,7 @@ def create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fa
     protein_meal = protein_can_thiet / 3
     fat_meal = fat_can_thiet / 3
     calo_meal = calo_muc_tieu / 3
-    meal = [[carb_meal, protein_meal, fat_meal, calo_meal]]
+    meal = [[protein_meal, carb_meal, fat_meal, calo_meal]]
     meal_scaled = scaler.transform(meal)
     _, indicies = knn.kneighbors(meal_scaled, n_neighbors = 3)
     menu = []
