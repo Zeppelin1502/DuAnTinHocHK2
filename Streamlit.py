@@ -32,9 +32,9 @@ st.title("🥗 AI Nutritionist - Trợ lý Dinh dưỡng Cá nhân của bạn!"
 st.subheader("Chỉ số của cơ thể")
 col1, col2, col3, col4 = st.columns(4)
 with col1:
-    st.metric("Mục tiêu Calo/ngày", f" {calo_muc_tieu} kcal") # Thay "---" bằng biến logic
+    st.metric("Mục tiêu Calo/ngày", f" {calo_muc_tieu} kcal")
 with col2:
-    st.metric("Đạm khuyên dùng", f" {protein_can_thiet} g")      # Thay "---" bằng biến logic
+    st.metric("Đạm khuyên dùng", f" {protein_can_thiet} g")
 with col3:
     st.metric("Tinh bột khuyên dùng", f" {carb_can_thiet} g")
 with col4:
@@ -58,13 +58,13 @@ if st.button(" TẠO THỰC ĐƠN!", use_container_width=True, type="primary"):
             st.markdown(f"#### Bữa {i + 1}")
             st.write(f"Món ăn: {mon_an["Name"]} ")
             st.caption(f"Chi tiết: {mon_an["Calo (kcal)"]} kcal | {mon_an["Protein (g)"]} g Đạm | {mon_an["Carbs (g)"]} g Carbs | {mon_an["Fat (g)"]} g Fat")
-
+menu_here = create(knn, df, scaler, calo_muc_tieu, carb_can_thiet, protein_can_thiet, fat_can_thiet, so_bua_an)
 mon_1 = menu_here[0]
 mon_2 = menu_here[1]
 mon_3 = menu_here[2]
 #4. button
 st.divider()
-c1 = st.columns(1)
+c1 = st.container()
 with c1:
     noi_dung_file = f"Thực đơn của bạn: \nBữa 1: {mon_1}\nBữa 2: {mon_2}\nBữa 3: {mon_3}"
     st.download_button(
