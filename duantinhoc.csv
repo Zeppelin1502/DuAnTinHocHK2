@@ -461,3 +461,203 @@ Combo 109: Cơm Rang Trứng + Cánh Gà + Chè Đậu,1,32,145,45,6,1600,1113,0
 Combo 110: Bánh Mì Pate Xúc Xích + Trứng + Sữa,3,35,102,52,4,1450,1016,0
 Combo 111: Cơm Chay Gạo Lứt Đậu Hũ Tứ Xuyên + Canh Nấm + Sữa Hạt Điều,1,32,115,38,18,850,930,4
 Combo 112: Thăn Lưng Bò Áp Chảo (400g) + Trứng Luộc + Salad Ức Gà,2,95,20,50,8,950,910,4
+Cơm tấm trắng,1,4,30,0.5,0.5,5,140,4
+Bún nưa (Shirataki),1,0.5,2,0,2,5,10,4
+Bánh mì nguyên cám,1,10,40,2,6,250,218,4
+Bánh bao chay,1,5,35,2,2,150,178,4
+Miến đậu xanh,1,0.5,80,0.5,2,15,326,4
+Khoai lang tím luộc,1,2,27,0.2,4,15,117,4
+Sắn dây luộc,1,1.5,38,0.2,3,5,159,4
+Bánh canh bột lọc,1,1,45,0.5,1,100,188,4
+Mì soba luộc,1,5,21,0.5,3,60,108,4
+Mì udon luộc,1,3,26,0.5,1,150,120,4
+Cơm chiên tỏi,1,4,35,10,1,350,246,4
+Bún xào chay,1,5,40,8,3,400,252,4
+Khoai sọ luộc,1,1.5,25,0.2,3,10,107,4
+Ngô ngọt luộc,1,3,19,1.2,2,15,98,4
+Tôm sú nướng,2,24,1,2,0,350,118,6
+Mực nướng sa tế,2,18,4,3,0,500,135,6
+Cồi sò điệp nướng,2,20,3,1,0,300,101,6
+Chả mực Hạ Long,2,16,8,10,0,600,186,6
+Cá hồi hấp xì dầu,2,22,2,12,0,400,204,6
+Ếch rang muối,2,18,5,8,0,600,164,0
+Thịt thỏ nướng,2,22,0,8,0,150,160,0
+Chân giò luộc,2,20,0,25,0,80,305,0
+Lõi rùa bò luộc,2,25,0,7,0,60,163,0
+Gà ta luộc,2,23,0,10,0,75,182,0
+Sườn sụn nướng,2,18,2,15,0,500,215,0
+Tim gà xào mướp,2,15,6,8,2,350,156,0
+Gan bò áp chảo,2,20,4,5,0,200,141,0
+Trứng cút ốp la,2,13,1,12,0,150,164,3
+Lòng đỏ trứng muối,2,16,2,26,0,1200,306,3
+Sữa chua uống,2,3,12,2,0,40,78,2
+Váng sữa vị vani,3,3,15,12,0,50,180,2
+Sữa đậu gà,2,4,8,2,2,30,66,4
+Đậu hũ non sốt nấm,2,6,5,3,2,200,71,4
+Chả chay đậu xanh,2,10,15,8,3,400,172,4
+Thịt viên chay đậu nành,2,15,10,6,4,450,154,4
+Nấm đùi gà nướng bơ,1,4,8,5,3,200,93,4
+Nấm tuyết xào chua ngọt,1,2,12,2,4,300,74,4
+Măng tây luộc,1,2.5,4,0.2,2,15,27,4
+Cải bó xôi xào tỏi,1,3,5,4,3,350,68,4
+Rau muống xào chao,1,4,6,5,3,500,85,4
+Bắp cải xào cà chua,1,2,8,3,3,300,67,4
+Bí đao luộc,1,0.5,3,0.1,1,5,14,4
+Quả lê,1,0.4,15,0.1,3,1,62,4
+Quả dứa (thơm),1,0.5,13,0.1,1.5,1,54,4
+Quả đào,1,0.9,10,0.2,1.5,0,45,4
+Nho khô,1,3,79,0.5,4,10,332,4
+Hạt sen sấy,1,18,60,2,6,50,330,4
+Trà kombucha,1,0.1,7,0,0,10,28,4
+Sinh tố bơ chuối,1,3,30,12,5,30,240,4
+Mỡ dừa,3,0,0,100,0,0,900,4
+Combo 113: Cơm Gà Rang Muối + Canh Rau Ngót + Trà Tắc,1,35,120,40,5,1500,980,0
+Combo 114: Bún Bò Nam Bộ + Trà Đá + Sữa Chua,1,42,110,35,6,1600,923,0
+Combo 115: Phở Gà Trộn + Quẩy + Trà Sữa Size M,1,38,150,45,4,1800,1157,0
+Combo 116: Cơm Rang Dưa Lòng + Trà Chanh,1,30,130,50,5,1900,1090,0
+Combo 117: Mì Ý Sốt Pesto + Ức Gà Nướng + Nước Ép Dứa,1,45,100,35,8,1200,895,0
+Combo 118: Steak Cá Hồi + Khoai Tây Nghiền + Măng Tây,2,40,60,45,7,1100,805,6
+Combo 119: Bún Dọc Mùng Chân Giò + Nước Vối,1,35,100,55,4,1400,1035,0
+Combo 120: Bánh Đa Cua + Nem Rán + Trà Tắc,1,28,115,42,5,1700,950,0
+Combo 121: Cơm Tấm Chả Cua + Bì + Trứng Opla,1,40,125,48,4,1850,1092,0
+Combo 122: Bánh Canh Chả Cá + Sinh Tố Bơ,1,25,110,38,6,1500,882,6
+Combo 123: Hủ Tiếu Nam Vang + Xíu Mại + Trà Đá,1,38,105,35,4,1600,887,0
+Combo 124: Bánh Mì Bò Kho + Cafe Sữa Đá,1,42,120,45,5,1500,1053,0
+Combo 125: Cơm Niêu Thịt Kho Tiêu + Canh Chua Cá Mát,1,36,130,38,6,1750,1006,6
+Combo 126: Bún Đậu Trộn Mắm Tôm + Chả Cốm + Nước Chanh,1,45,100,40,7,2100,940,0
+Combo 127: Cơm Cuộn Kimbap + Tteokbokki + Sữa Chuối,1,30,160,25,5,1400,985,0
+Combo 128: Gà Rán 2 Miếng + Khoai Tây Lắc + Cola,3,40,140,55,4,1900,1215,0
+Combo 129: Pizza Phô Mai Tiêu Đen + Cánh Gà BBQ + 7Up,3,45,130,50,4,2000,1150,0
+Combo 130: Bánh Ướt Lòng Gà + Nước Sâm Xào,1,35,105,30,3,1300,830,0
+Combo 131: Bún Chả Quạt + Bánh Tôm + Nước Mía,1,38,140,45,5,1650,1117,0
+Combo 132: Cơm Thịt Rang Cháy Cạnh + Canh Mùng Tơi,1,35,120,55,6,1800,1115,0
+Combo 133: Mì Trộn Tóp Mỡ + Trứng Lòng Đào + Sữa Đậu,1,30,110,48,4,1500,992,0
+Combo 134: Lẩu Bò Mini + Mì Tôm + Coca,2,48,120,40,5,2200,1032,0
+Combo 135: Cơm Gà Cà Ri + Bánh Naan + Trà Đào,1,45,130,42,6,1700,1078,0
+Combo 136: Bánh Xèo Miền Trung + Nem Lụi + Nước Ép Ổi,1,32,110,45,5,1600,973,0
+Combo 137: Cháo Lòng + Dồi Sụn + Trà Đá,1,35,90,48,3,1800,932,0
+Combo 138: Miến Lươn Trộn + Nước Ép Cà Rốt,1,32,105,28,4,1400,800,6
+Combo 139: Bún Thái Hải Sản + Nước Chanh Sả,1,40,115,25,5,1900,845,6
+Combo 140: Mì Quảng Ếch + Bánh Đa Dày + Nước Ép Cam,1,38,125,32,6,1500,940,0
+Combo 141: Bò Né Khổ Qua + Bánh Mì + Cafe Đen,2,45,95,40,5,1600,920,0
+Combo 142: Súp Cua Trứng Bắc Thảo + Óc Heo + Sữa Đậu,1,42,85,48,4,1550,940,0
+Combo 143: Cơm Chiên Kim Chi + Trứng Opla + Canh Rong,1,28,120,35,6,1700,907,3
+Combo 144: Bánh Cuốn Trứng + Chả Quế + Nước Ép Lựu,1,30,100,35,4,1400,835,0
+Combo 145: Bún Nước Lèo + Heo Quay + Nước Dừa,1,40,105,42,5,1900,958,0
+Combo 146: Phở Khô Gia Lai + Súp Bò Viên + Trà Tắc,1,45,120,38,4,1850,1002,0
+Combo 147: Cơm Lươn Nhật Unadon + Miso + Mochi,1,35,130,30,4,1600,930,6
+Combo 148: Salad Ức Gà Xông Khói + Khoai Lang + Trà Xanh,2,42,80,20,9,1100,668,0
+Combo 149: Bún Quậy Phú Quốc + Nước Mía,1,38,110,22,4,1300,790,6
+Combo 150: Bánh Bột Lọc + Chả Bò + Sữa Chua,1,30,115,35,3,1500,895,0
+Combo 151: Cơm Thố Hải Sản + Salad Giấm + Trà Sâm,1,38,110,28,6,1450,844,6
+Combo 152: Bún Cá Cay Hải Phòng + Nước Vối,1,35,105,26,5,1600,794,6
+Combo 153: Bánh Mì Heo Quay + Bánh Su Kem + Trà Đá,1,30,125,50,4,1500,1070,0
+Combo 154: Cơm Lứt Nấm Kho + Canh Chua Chay + Nước Thơm,1,25,135,22,8,1200,838,4
+Combo 155: Sushi Cá Ngừ + Cuộn Cá Hồi + Rượu Sake,1,45,120,28,4,1500,912,6
+Combo 156: Bò Sốt Vang + Bánh Mì + Trà Chanh,1,42,140,45,5,1700,1133,0
+Combo 157: Mì Xào Giòn Chay + Sinh Tố Xoài,1,20,145,35,6,1400,975,4
+Combo 158: Lẩu Cá Kèo + Bún + Trà Tắc,2,40,115,32,5,1800,908,6
+Combo 159: Cơm Gà Tiềm Ớt Hiểm + Rau Cải Luộc,2,48,110,45,6,1650,1037,0
+Combo 160: Bánh Đa Xào Bò Cần Tây + Nước Ép Ổi,1,42,115,38,7,1500,970,0
+Combo 161: Bún Thit Nướng Chay + Nem Chay + Trà Đào,1,28,130,32,7,1400,920,4
+Combo 162: Cơm Trắng + Tôm Rang Thịt + Canh Bí Đao,1,38,120,55,5,1600,1127,0
+Bánh xèo chay,1,5,30,10,2,200,230,4
+Gỏi cuốn chay,1,3,20,2,1,100,110,4
+Cơm chiên chay,1,5,45,8,3,300,272,4
+Bún măng chay,1,6,40,5,4,350,229,4
+Phở chay,1,5,45,4,3,400,236,4
+Nấm kim châm xào cay,1,3,10,5,4,250,97,4
+Đậu bắp xào tỏi,1,2,7,3,3,150,63,4
+Canh chua chay,1,3,12,2,2,300,78,4
+Súp bí đỏ bơ cốt dừa,1,2,15,8,3,200,140,4
+Salad bắp cải tím,1,1,8,4,2,50,72,4
+Hạt dẻ cười rang muối,3,20,28,45,10,300,597,4
+Nước ép táo cần tây,1,1,15,0,1,30,64,4
+Cà phê sữa hạnh nhân,1,1,8,3,0,40,63,4
+Bánh quy yến mạch,1,4,20,7,3,100,159,4
+Kẹo lạc (Đậu phộng),1,5,25,12,2,10,228,4
+Sữa ngô (bắp),1,2,20,3,1,20,115,4
+Cháo yến mạch bí đỏ,1,4,25,2,3,50,134,4
+Rong biển cháy tỏi,1,4,10,15,5,400,191,4
+Đậu phộng rang húng lìu,3,25,16,49,8,200,605,4
+Cá kèo nướng muối ớt,2,15,1,6,0,350,118,6
+Tôm hùm đất xào Cajun,2,18,5,10,0,450,182,6
+Mực một nắng nướng,2,22,2,4,0,300,132,6
+Ốc móng tay xào me,2,12,10,6,0,400,142,6
+Cua lột chiên giòn,2,14,8,15,0,350,223,6
+Bề bề rang me,2,16,12,5,0,380,157,6
+Sò lụa hấp thái,2,15,4,2,0,450,94,6
+Chả cá Lã Vọng,2,18,5,15,1,300,227,6
+Nem cua bể,2,12,15,18,1,250,270,6
+Cá tầm nướng riềng mẻ,2,17,2,12,0,280,184,6
+Thịt thỏ xào sả ớt,2,21,4,8,0,320,172,0
+Ếch xào măng,2,16,6,5,1,350,133,0
+Bò lúc lắc,2,22,6,12,0,300,220,0
+Gà hầm sâm,2,25,5,10,1,250,210,0
+Chân gà sả tắc,2,14,8,6,0,500,142,0
+Dê xào lăn,2,20,5,15,1,400,235,0
+Vịt om sấu,2,18,6,20,1,450,276,0
+Lòng bò xào dưa,2,15,8,18,2,500,254,0
+Thịt heo quay lá mắc mật,2,16,2,25,0,400,297,0
+Sườn non ram mặn,2,18,10,18,0,500,274,0
+Chim cút chiên bơ,2,15,2,20,0,300,248,0
+Bê thui Cầu Mống,2,22,0,6,0,200,142,0
+Heo rừng xào sa tế,2,20,4,12,0,350,204,0
+Giò thủ (Giò xào),2,15,2,28,0,450,320,0
+Nem chua Thanh Hóa (100g),2,22,5,3,0,600,135,0
+Chả ram tôm đất,2,10,20,15,1,300,255,0
+Súp gà ngô non,1,8,15,4,1,250,128,0
+Cháo hàu,1,10,25,5,1,300,185,6
+Trứng hấp mộc nhĩ,2,12,4,10,1,250,154,3
+Trứng vịt lộn hầm ngải cứu,2,14,5,12,1,200,184,3
+Sữa chua trân châu cốt dừa,1,4,25,10,1,80,206,2
+Combo 163: Cơm Gạo Lứt Bò Lúc Lắc + Canh Rong Biển + Trà Ô Long,1,35,90,25,6,1200,725,0
+Combo 164: Phở Bò Chín + Quẩy (2 cái) + Sữa Đậu Nành,1,40,110,30,4,1800,870,0
+Combo 165: Bún Mọc Dọc Mùng + Bánh Rán + Nước Mía,1,32,130,35,5,1500,963,0
+Combo 166: Cơm Rang Dưa Bò Lõi Rùa + Canh Cải + Trà Tắc,1,45,120,40,6,1900,1020,0
+Combo 167: Mì Ý Sốt Cà Chua Thịt Băm + Khoai Tây Chiên + Coca,1,30,140,45,5,1700,1085,0
+Combo 168: Gà Không Lối Thoát (1/2 con) + Gỏi Gà + Sữa Ngô,2,60,150,50,4,2100,1290,0
+Combo 169: Cơm Gà Cơm Nếp + Đùi Gà Nướng + Kim Chi,1,42,110,35,3,1600,923,0
+Combo 170: Bún Bò Huế Sụn Bò + Chả Cua + Sinh Tố Bơ,1,48,125,42,6,2200,1070,0
+Combo 171: Cơm Chiên Bò Lúc Lắc + Súp Bí Đỏ + Trà Đào,1,38,135,40,5,1500,1052,0
+Combo 172: Bánh Mì Dân Tổ + Trà Sữa Nướng + Pudding,1,35,150,55,3,1800,1235,0
+Combo 173: Cơm Chay Khổ Qua Nhồi Hạt Sen + Canh Chua + Chè Mè Đen,1,25,140,20,8,1200,840,4
+Combo 174: Lẩu Nấm Chay Dưỡng Sinh + Miến Dong + Nước Ép Táo,1,30,120,15,10,1500,735,4
+Combo 175: Bún Riêu Chay + Đậu Hũ Chiên Giòn + Sữa Hạnh Nhân,1,28,110,25,6,1600,777,4
+Combo 176: Cơm Gạo Lứt Cuộn Rong Biển Chay + Súp Miso + Trà Xanh,1,22,95,18,5,1300,630,4
+Combo 177: Pizza Chay Rau Củ + Khoai Tây Nghiền + 7Up,1,25,130,35,7,1400,935,4
+Combo 178: Cá Lóc Nướng Trui + Bánh Tráng + Mắm Nêm + Nước Khế,2,55,80,20,8,2000,720,6
+Combo 179: Lẩu Thái Cua Biển + Bún Tươi + Trà Đá,1,45,115,25,4,2500,865,6
+Combo 180: Cơm Tấm Mực Nướng Sa Tế + Trứng Chiên + Canh Ngót,1,40,105,30,5,1700,850,6
+Combo 181: Bún Hải Sản Bề Bề + Nem Hải Sản + Sinh Tố Dừa,1,42,120,38,5,1900,990,6
+Combo 182: Miến Cua Cà Mau Xào + Súp Bào Ngư + Nước Ép Lựu,1,48,90,22,6,1800,750,6
+Combo 183: Cơm Văn Phòng Gà Xào Sả Ớt + Canh Bí + Chè Cốm,1,35,130,25,4,1500,885,0
+Combo 184: Cơm Văn Phòng Thịt Kho Trứng + Canh Rau Cải + Sữa Chua,1,38,110,35,3,1600,907,0
+Combo 185: Cơm Văn Phòng Cá Hú Kho Tộ + Rau Luộc + Trái Cây,1,30,115,30,5,1400,850,6
+Combo 186: Bún Đậu Chả Cốm + Thịt Luộc + Sữa Bắp,1,45,100,48,5,2100,1012,0
+Combo 187: Bún Nem Rán Hà Nội + Chả Lụa + Trà Tắc,1,32,110,40,4,1800,928,0
+Combo 188: Cơm Gạo Lứt Ức Gà Áp Chảo + Bông Cải Xanh + Nước Ép Cam,1,45,70,12,8,900,568,0
+Combo 189: Salad Quinoa Cá Hồi Xông Khói + Bơ + Nước Ép Cần Tây,1,38,55,28,10,1100,624,6
+Combo 190: Bò Bít Tết Thăn Ngoại + Khoai Tây Bỏ Lò + Vang Đỏ,2,50,65,45,5,1400,865,0
+Combo 191: Cơm Lươn Nướng Nhật + Súp Miso + Trứng Hấp Chawanmushi,1,35,100,32,2,1600,828,6
+Combo 192: Sashimi Tổng Hợp + Cơm Nắm + Tempura Rau Củ,1,40,95,25,4,1500,765,6
+Combo 193: Bánh Cuốn Lạng Sơn + Chả Quế + Nước Vối,1,28,90,25,3,1400,697,0
+Combo 194: Phở Trộn Chua Ngọt + Bò Xào + Trà Chanh,1,35,120,30,4,1600,890,0
+Combo 195: Bánh Mì Thổ Nhĩ Kỳ (Doner Kebab) + Khoai Tây + Cola,1,32,135,45,5,1700,1073,0
+Combo 196: Bún Giò Heo Nấu Giả Cầy + Rau Sống + Trà Đá,1,42,105,48,6,1800,1020,0
+Combo 197: Cơm Trắng Dê Tái Chanh + Canh Khoai Sọ + Nước Sâm,1,40,110,35,5,1500,915,0
+Combo 198: Xôi Mặn Thập Cẩm + Lạp Xưởng + Trứng Úp + Trà Sữa,1,38,140,45,3,1800,1117,0
+Combo 199: Cháo Ếch Singapore (2 thố) + Bánh Mì Tỏi + Nước Ép Dưa Hấu,1,45,125,20,4,1900,860,0
+Combo 200: Gà Rán Sốt Cay Hàn Quốc + Tokbokki Phô Mai + Soju,1,40,145,48,5,2000,1172,0
+Combo 201: Cơm Trộn Bibimbap Thịt Bò + Canh Kim Chi + Nước Ép Nho,1,35,115,28,6,1700,852,0
+Combo 202: Mì Cay Khổng Lồ 7 Cấp Độ + Trà Sữa Size L,1,32,160,40,5,2200,1128,0
+Combo 203: Bánh Canh Ghẹ Nguyên Con + Chả Ghẹ + Sinh Tố Dâu,1,48,110,25,4,1850,857,6
+Combo 204: Hủ Tiếu Xào Bò Cật + Canh Hẹ + Sữa Đậu Xanh,1,45,120,38,5,1600,1002,0
+Combo 205: Bò Né 3 Ngon Dày Bít Tết + Pate + Trứng + Bánh Mì + Cola,2,55,105,50,4,1950,1090,0
+Combo 206: Bún Cá Ngừ Đại Dương Kho Thơm + Rau Lòng + Trà Đá,1,42,95,22,5,1700,746,6
+Combo 207: Cơm Âm Phủ Huế + Nem Nướng + Nước Mơ,1,38,110,32,5,1650,880,0
+Combo 208: Bánh Đa Lươn Đồng Nghệ An + Súp Lươn + Nước Ép Táo,1,45,100,25,4,1500,805,6
+Combo 209: Lẩu Bò Nhúng Dấm + Bún Trái Cây + Trà Tắc,1,50,115,35,6,2100,975,0
+Combo 210: Cơm Chay Kho Quẹt Rau Luộc + Đậu Hũ + Sữa Đậu,1,25,125,18,9,1400,762,4
+Combo 211: Nấm Hương Nhồi Đậu Phụ Chiên + Canh Bí Chay + Nước Mía,1,28,110,22,6,1300,750,4
+Combo 212: Cơm Gạo Lứt Chả Tôm + Canh Cải Xanh + Nước Ép Thơm,1,35,95,15,6,1200,655,6
