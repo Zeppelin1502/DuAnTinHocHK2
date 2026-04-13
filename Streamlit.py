@@ -21,14 +21,13 @@ with st.sidebar:
     gioi_tinh = st.selectbox("Giới tính:", ["Nam", "Nữ"])
     van_dong = st.selectbox("Mức độ vận động:", ["Rất hay vận động", "Hay vận động", "Ít vận động", "Không bao giờ vận động"])
     muc_tieu =st.selectbox("Mục tiêu:", ["Tăng cân", "Giảm cân", "Giữ dáng"])
-    loai_tru = st.multiselect("Món muốn loại trừ:", ["Hành", "Hải sản", "Sữa"])
 
 calo_muc_tieu = tinh_TDEE(can_nang, chieu_cao, tuoi, gioi_tinh, van_dong, muc_tieu)
 protein_can_thiet = tinh_protein(can_nang, muc_tieu, van_dong)
 fat_can_thiet = tinh_fat(calo_muc_tieu)
 carb_can_thiet = tinh_carb(calo_muc_tieu, protein_can_thiet, fat_can_thiet)
 #2. main
-st.title("🥗 AI Nutritionist - Trợ lý Dinh dưỡng Cá nhân của bạn! - made by Bao Dang and Hoang Minh")
+st.title("AI Nutritionist - Trợ lý Dinh dưỡng Cá nhân của bạn! - made by Bao Dang and Hoang Minh")
 st.subheader("Chỉ số của cơ thể")
 col1, col2, col3, col4 = st.columns(4)
 with col1:
