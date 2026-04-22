@@ -1,7 +1,6 @@
 import streamlit as st
 import time
 from Backend import tinh_TDEE, tinh_protein, tinh_fat, tinh_carb, learn, create
-
 @st.cache_resource
 def load():
     return learn("duantinhoc.csv")
@@ -12,6 +11,7 @@ st.set_page_config(
     page_title="Dự Án Tin Học Hk2",
     layout="wide",
 )
+st.sidebar.image("abc.png", width=250)
 #1.sidebar
 with st.sidebar:
     st.header("Thông số của bạn")
